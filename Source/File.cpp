@@ -6,9 +6,9 @@
 
 using std::string;
 
-File::File( ) : name(""), extension(""), size(0) { }
+File::File( ) : name(""), extension("") { }
 
-File::File(std::string name, std::string extension) : name(name), extension(extension), size(0) { }
+File::File(std::string name, std::string extension) : name(name), extension(extension) { }
 
 File::~File( ) {}
 

@@ -18,7 +18,6 @@ public:
 private:
 	std::string name;
 	std::string extension;
-	int size;
 };
 
 #endif //FILE_HPP
