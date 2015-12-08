@@ -15,6 +15,8 @@ public:
 	//Used to test various components in the SafeMatrix class.
 	void driver ( );
 	
+	int width ( ) const;
+
 	//Returns the number of rows in the matrix.
 	int length ( ) const;
 	
@@ -29,7 +31,7 @@ public:
 	}
 private:
 	int rowSize;
-	
+
 	//SafeArray of SafeArrays.
 	SafeArray<SafeArray<T>> myRows;
 };
@@ -56,6 +58,14 @@ void SafeMatrix<T>::driver ( ) {
 
 	cout << "=====Testing the [] operator=====\n";
 	cout << "SafeMatrix[0]: " << (*this)[0] << "\n";
+}
+
+template <class T>
+int SafeMatrix<T>::width ( ) const {
+	if(rowSize == 0) {
+		return 0;
+	}
+	return myRows[0].length ( );
 }
 
 template <class T>
