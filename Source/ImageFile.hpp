@@ -17,7 +17,7 @@ public:
 
 	int getDimensionWidth( ) const;
 
-	int getSize( ) const;
+	int getSize( ) const override;
 private:
 	SafeMatrix<int> pixelMatrix;
 	int colorDepth;
