@@ -5,11 +5,11 @@
 #include "SafeMatrix.hpp"
 #include <string>
 
-class ImageFile : File {
+class ImageFile : public File {
 public:
 	ImageFile( );
 
-	ImageFile(std::string fileName);
+	ImageFile(std::string fileName, int height, int width, int colorDepth);
 
 	int getColorDepth( ) const;
 
