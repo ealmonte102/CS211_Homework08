@@ -21,6 +21,7 @@ public:
 private:
 	SafeMatrix<int> pixelMatrix;
 	int colorDepth;
+	static const std::string extension;
 };
 
 #endif //IMAGEFILE_HPP

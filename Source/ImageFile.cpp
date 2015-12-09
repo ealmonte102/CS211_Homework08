@@ -3,10 +3,12 @@
 //
 #include "ImageFile.hpp"
 
-ImageFile::ImageFile( ) : pixelMatrix(SafeMatrix<int>(0,0)), colorDepth(0) { }
+const std::string ImageFile::extension = "gif";
+
+ImageFile::ImageFile ( ) : File (extension), pixelMatrix (SafeMatrix<int> (0, 0)), colorDepth (0) { }
 
 ImageFile::ImageFile(std::string fileName, int height, int width, int cD) : 
-	File(fileName, ".gif"), pixelMatrix(SafeMatrix<int>(height,width)), colorDepth(cD) { }
+	File(fileName, extension), pixelMatrix(SafeMatrix<int>(height,width)), colorDepth(cD) { }
 
 int ImageFile::getColorDepth() const {
 	return colorDepth;
