@@ -19,6 +19,7 @@ public:
 private:
 	SafeArray<int> charList;
 	int charCount;
+	static const std::string extension;
 };
 
 #endif //TEXTFILE_HPP
