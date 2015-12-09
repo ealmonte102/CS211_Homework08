@@ -11,6 +11,8 @@ public:
 
 	TextFile (std::string fileName);
 	
+	TextFile (std::string fileName, SafeArray<int> charList);
+
 	int getSize ( ) const override;
 
 	int getCharCount ( ) const;
