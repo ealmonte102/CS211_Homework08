@@ -6,7 +6,9 @@ class File {
 public:
 	File ( );
 	
-	File (std::string name, std::string extenstion);
+	File (std::string extension);
+
+	File (std::string name, std::string extension);
 	
 	virtual ~File ( );
 	
