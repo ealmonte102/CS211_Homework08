@@ -11,6 +11,8 @@ public:
 
 	ImageFile(std::string fileName, int height, int width, int colorDepth);
 
+	ImageFile (std::string fileName, SafeMatrix<int> pixelMatrix, int colorDepth);
+
 	int getColorDepth( ) const;
 
 	int getDimensionHeight( ) const;
